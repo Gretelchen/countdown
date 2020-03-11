@@ -2,7 +2,7 @@
   font-family: "Merriweather Sans", sans-serif;
   font-size: 100px;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 70px;
   color: #ff5252;
 }
 
@@ -29,4 +29,124 @@
 }
 .divider-color {
   border-color: #bdbdbd;
+}
+
+.rounds {
+  transform: rotate(90deg);
+  transform-origin: center center;
+  position: relative;
+  top: 0;
+  left: -50px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+.round {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  transform-origin: bottom center;
+  animation-name: roundAnim;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.round:after {
+  content: "";
+  display: block;
+  background-color: #ff5252;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  box-shadow: -7px 0 5px #ff5252;
+}
+.round:nth-child(1) {
+  animation-delay: 200ms;
+}
+.round:nth-child(2) {
+  animation-delay: 400ms;
+}
+.round:nth-child(3) {
+  animation-delay: 600ms;
+}
+.round:nth-child(4) {
+  animation-delay: 800ms;
+}
+.round:nth-child(5) {
+  animation-delay: 1000ms;
+}
+.round:nth-child(6) {
+  animation-delay: 1200ms;
+}
+.round:nth-child(7) {
+  animation-delay: 1400ms;
+}
+.round:nth-child(8) {
+  animation-delay: 1600ms;
+}
+.round:nth-child(9) {
+  animation-delay: 1800ms;
+}
+.round:nth-child(10) {
+  animation-delay: 2000ms;
+}
+.round:nth-child(11) {
+  animation-delay: 2200ms;
+}
+.round:nth-child(12) {
+  animation-delay: 2400ms;
+}
+.round:nth-child(13) {
+  animation-delay: 2600ms;
+}
+.round:nth-child(14) {
+  animation-delay: 2800ms;
+}
+.round:nth-child(15) {
+  animation-delay: 3000ms;
+}
+.round:nth-child(16) {
+  animation-delay: 3200ms;
+}
+.round:nth-child(17) {
+  animation-delay: 3400ms;
+}
+.round:nth-child(18) {
+  animation-delay: 3600ms;
+}
+.round:nth-child(19) {
+  animation-delay: 3800ms;
+}
+.round:nth-child(20) {
+  animation-delay: 4000ms;
+}
+@keyframes roundAnim {
+  0% {
+    transform: translateY(0%) rotate(0deg) scale(0.9, 0.9);
+    opacity: 0;
+  }
+  49.9999% {
+    transform: translateY(0%) rotate(360deg) scale(1, 1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-175%) rotate(0deg) scale(1, -1);
+  }
+  100% {
+    transform: translateY(-175%) rotate(-360deg) scale(0.9, -0.9);
+  }
 }
