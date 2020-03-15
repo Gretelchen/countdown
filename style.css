@@ -1,9 +1,50 @@
-.days {
+section {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 100px;
+}
+
+.days {
+  font-size: 70px;
   text-align: center;
   margin-top: 70px;
   color: #ff5252;
+}
+
+.date {
+  font-size: 20px;
+  text-align: center;
+  color: #ff5252;
+}
+
+h2 {
+  display: flex;
+  margin-top: 50px;
+}
+
+h3 {
+  display: flex;
+  margin-top: 10px;
+}
+.title {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  line-height: 20px;
+  text-align: center;
+  color: #9e9e9e;
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+.number {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+  margin: 0 15px;
+  font-style: 3em;
+  background: #bdbdbd;
 }
 
 .dark-primary-color {
